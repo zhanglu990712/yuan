@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+           <script src="jquery-1.11.3.min.js"></script>
+          <script src="JS/JS.js"></script>
+        <link rel="stylesheet" href="css/css.css" >
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" >
+         <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+         <script type="text/javascript">
+            $(function(){
+                $('.chongzhi').click(function(){
+                    $('input').val('');
+                    $('.form-control-static').html('')
+                })
+            })
+         </script>
+    </head>
+    <body>
+    <div class="container">
+            <div class="page-header">
+                <h3><strong>注册</strong></h3>
+            </div>
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>注册信息</legend>
+                    <div class="form-group">
+                        <label for="name" class="col-md-2 control-label">用户登录：</label>
+                        <div class="col-md-8">
+                            <input type="text" id="yonhu" placeholder="设置用户名" class="form-control denglu-input1" />
+                        </div>
+                        <div class="col-md-2 form-control-static username-span"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-md-2 control-label">手机号码：</label>
+                        <div class="col-md-8">
+                            <input type="text" id="shouji" placeholder="可用于登录和找回密码" class="form-control  addressp" />
+                        </div>
+                        <div class="col-md-2 form-control-static labelp"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-md-2 control-label">密码：</label>
+                        <div class="col-md-8">
+                            <input type="text" id="mima" placeholder="请设置登录密码" class="form-control denglu-input2" />
+                        </div>
+                        <div class="col-md-2 form-control-static password-span2"></div>
+                    </div>
+                   <div class="form-group">
+                        <label for="name" class="col-md-2 control-label">确认密码：</label>
+                        <div class="col-md-8">
+                            <input type="text" id="yanzheng" placeholder="请设置确认密码" class="form-control denglu-input3" />
+                        </div>
+                        <div class="col-md-2 form-control-static password-span3"></div>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <div class="col-md-8 col-md-offset-2">
+                        <button type="button" class="btn btn-default">注册</button>
+                        <button type="button" class="btn btn-default chongzhi">重置</button>
+                        <button class="btn btn-default chongzhi" ><a href="zhubao.html"style="color:#000;">返回主页面</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
